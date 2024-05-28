@@ -14,7 +14,7 @@
   |- pant.js
 - Controllers
   |- brandController.js
-  |- shirtController.jstocu
+  |- shirtController.js
   |- pantController.js
 - Seed
   |- brands.js
