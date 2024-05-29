@@ -1,7 +1,7 @@
 
 const PORT = process.env.PORT || 3002;
-const app = express()
 const express = require('express')
+const app = express()
 const db = require('./db')
 const brandController = require('./controllers/brandController.js')
 const shirtController = require('./controllers/shirtController.js' )

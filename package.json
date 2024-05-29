@@ -1,7 +1,7 @@
 {
   "name": "clothing--store-project",
   "version": "1.0.0",
-  "description": "",
+  "description": "- Client  |-- index.html  |-- style.cs   |-- script.js - server.js - package.json - DB   |- index.js - Models   |- brand.js    |- shirt.js   |- pant.js - Controllers   |- brandController.js   |- shirtController.js   |- pantController.js - Seed   |- brands.js   |- shirts.js   |- pants.js - Node Modules - .gitIgnore",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,6 +12,15 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.19.2",
     "mongoose": "^8.4.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlfredNedohon0317/clothing--store-project.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AlfredNedohon0317/clothing--store-project/issues"
+  },
+  "homepage": "https://github.com/AlfredNedohon0317/clothing--store-project#readme"
 }
