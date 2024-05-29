@@ -105,7 +105,7 @@ const main = async () => {
     
     
     ]
-    await Pants.insertMany(pants)
+    await Pant.insertMany(pants)
     console.log('Created pants!')
 
 }
@@ -114,3 +114,5 @@ const run = async () => {
     await main()
     db.close()
 }
+
+run()
