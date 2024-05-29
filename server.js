@@ -1,11 +1,14 @@
 
-const PORT = process.env.PORT || 3002;
+const PORT = process.env.PORT || 3001;
 const express = require('express')
 const app = express()
 const db = require('./db')
+const logger = require('morgan')
+const bodyParser = require('body-parser')
 const brandController = require('./controllers/brandController.js')
 const shirtController = require('./controllers/shirtController.js' )
-const pantController = require('/controllers/pantController.js' )
+const pantController = require('./controllers/pantController.js' )
+
 
 app.use(logger('dev'))
 app.use(bodyParser.json())
