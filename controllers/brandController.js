@@ -41,7 +41,7 @@ const createBrands = async (req, res) => {
 
 // Update
 
-const updateBrand = async (req, res) => {
+const updateBrands = async (req, res) => {
     try {
         let {id} = req.params;
         let brand = await Brand.findByIdAndUpdate(id, req.body, {new: true})
