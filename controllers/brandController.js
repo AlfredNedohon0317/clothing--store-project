@@ -1,5 +1,7 @@
 const Brand = require('../models/brand')
 
+// Read/Show
+
 const getAllBrands = async (req, res) => {
     try {
         const brands = await Brand.find()
@@ -22,7 +24,22 @@ const getBrandById = async (req, res) => {
     }
 }
 
+
+// create
+
+const createBrands = async (req, res) => {
+    try {
+        const brand = await new Brand(req.body)
+        await brand.save()
+        return res.status(201).json({
+            brand
+        })
+    } catch (error) {
+        return res.status(500).json({ error: error.message })
+    }
+}
 module.exports = {
     getAllBrands,
-    getBrandById
+    getBrandById,
+    createBrands
 }
