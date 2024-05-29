@@ -5,7 +5,7 @@ const app = express()
 const db = require('./db')
 const brandController = require('./controllers/brandController.js')
 const shirtController = require('./controllers/shirtController.js' )
-const pantController = require('/controllers/pantContoller.js' )
+const pantController = require('/controllers/pantController.js' )
 
 app.use(logger('dev'))
 app.use(bodyParser.json())
