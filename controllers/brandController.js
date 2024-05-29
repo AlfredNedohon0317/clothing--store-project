@@ -73,6 +73,6 @@ module.exports = {
     getAllBrands,
     getBrandById,
     createBrands,
-    updateBrand,
+    updateBrands,
     deleteBrand
 }
