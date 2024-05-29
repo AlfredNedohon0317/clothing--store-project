@@ -93,8 +93,9 @@ const main = async () => {
              brand: versace[0]._id    
          }
     ]
-      await Shirt.insertMany(shirts)
-      console.log('Created shirts')
+      
+    await Shirt.insertMany(shirts)
+    console.log('Created shirts')
 }
 
 const run = async () => {
