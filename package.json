@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.19.2",
     "mongoose": "^8.4.0"
   },
@@ -22,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/AlfredNedohon0317/clothing--store-project/issues"
   },
-  "homepage": "https://github.com/AlfredNedohon0317/clothing--store-project#readme"
+  "homepage": "https://github.com/AlfredNedohon0317/clothing--store-project#readme",
+  "devDependencies": {
+    "nodemon": "^3.1.2"
+  }
 }
