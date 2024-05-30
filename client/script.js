@@ -10,8 +10,14 @@ async function getInfo() {
         console.log(brand.name)
         const titleEl = document.createElement('h2')
         const brandEl = document.createElement('img')
+       
+        brandEl.addEventListener('click', handleClick)
         if (brand.name === 'Chanel') {
             brandEl.src = 'https://i.pinimg.com/736x/32/43/f9/3243f9409fae41757d06fe6bc2d2d06d.jpg'//chanel pic
+
+
+
+
         } else if (brand.name === 'Dior') {
             brandEl.src = 'https://images-prod.dazeddigital.com/540/azure/dazed-prod/1120/0/1120547.jpg'//dior pic
         } else if (brand.name === 'Gucci') {
