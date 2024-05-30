@@ -22,8 +22,13 @@ app.listen(PORT, () => console.log(`Listening on port: ${PORT}`))
 app.get('/', (req, res) => res.send('initializing server back end!'))
 
 app.get('/brands', brandController.getAllBrands)
+app.get('/shirts', shirtController.getAllShirts)
+app.get('/pants', pantController.getAllPants)
+
 
 app.get('/brands/:id', brandController.getBrandById)
+app.get('/shirts/:id', shirtController.getShirtById)
+app.get('/pants/:id', pantController.getPantsById)
 
 app.post('/brands', brandController.createBrands)
 
