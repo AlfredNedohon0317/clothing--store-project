@@ -8,6 +8,7 @@ async function getInfo() {
 
     brandData.forEach((brand) => {
         console.log(brand.name)
+        const titleEl = document.createElement('h2')
         const brandEl = document.createElement('img')
         //brandEl.innerHTML = brand.name
         if (brand.name === 'Chanel') {
@@ -23,6 +24,8 @@ async function getInfo() {
         } else {
             console.log('Image not available')
         }
+        titleEl.innerHTML = `${brand.name}`
+        bodyEl.appendChild(titleEl)
         bodyEl.appendChild(brandEl)
     })
    // console.log(brandData[0].name)
