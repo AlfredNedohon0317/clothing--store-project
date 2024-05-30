@@ -6,8 +6,16 @@ async function getInfo() {
 
     const brandData = res.data
 
-    // console.log(res.data)
-    console.log(brandData[0].name)
+    brandData.forEach((brand) => {
+        console.log(brand.name)
+        const brandEl = document.createElement('h2')
+        brandEl.innerHTML = brand.name
+        bodyEl.appendChild(brandEl)
+    })
+
+   // console.log(brandData[0].name)
+
+
 
     
 }
